@@ -8,7 +8,7 @@ ARG USER=user
 WORKDIR ${WORKDIR}
 
 RUN useradd --system ${USER} && \
-    chown --recursive ${WORKDIR} ${USER}
+    chown --recursive ${USER} ${WORKDIR}
 
 RUN apt update && apt upgrade -y
 
@@ -22,4 +22,4 @@ COPY --chown=${USER} ./app app
 
 USER ${USER}
 
-ENTRYPOINT ['python', 'main.py']
+ENTRYPOINT ["python", "main.py"]
