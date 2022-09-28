@@ -1,0 +1,1 @@
+from .generate_user import generate_full_message
