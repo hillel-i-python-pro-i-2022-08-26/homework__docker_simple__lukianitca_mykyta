@@ -4,10 +4,12 @@ fake_core = Faker()
 
 
 def generate_full_message():
-    return f"""
+    print(
+        f"""
 User: {generate_user()} ({generate_email()})
 Says: {generate_text()}
 """
+    )
 
 
 def generate_user():
