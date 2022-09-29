@@ -12,13 +12,13 @@ Says: {generate_text()}
     )
 
 
-def generate_user():
+def generate_user() -> str:
     return fake_core.name()
 
 
-def generate_email():
+def generate_email() -> str:
     return fake_core.email()
 
 
-def generate_text():
+def generate_text() -> str:
     return fake_core.text()
