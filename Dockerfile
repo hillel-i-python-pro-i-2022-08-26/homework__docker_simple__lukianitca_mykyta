@@ -22,4 +22,4 @@ COPY --chown=${USER} ./app app
 
 USER ${USER}
 
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["python", "show_message.py"]
